@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Sites</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: #005aab;
+        }
+
+        .header img {
+            max-height: 70px;
+        }
+
+        .tab-button {
+            color: #4b5563;
+        }
+
+        .tab-button:hover,
+        .tab-button.active {
+            color: #000000;
+        }
+
+        .footer {
+            background-color: #005aab;
+            color: white;
+        }
+
+        .footer a:hover {
+            color: #000000;
+        }
+
+        .internal-site-link:hover h3 {
+            color: #000000;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center content horizontally */
+        }
+
+        .tab-content-wrapper {
+            width: 100%;
+            /* Ensure tab content spans full width */
+            padding: 1rem;
+            /* Adjust padding as needed */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* Responsive grid layout */
+            grid-template-columns: 250px 250px 250px 250px 250px;
+            gap: 1rem;
+            /* Adjust gap between grid items */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-item {
+            width: 250px;
+            height: 150px;
+            border: 1px solid #e2e8f0;
+            border-radius: 2rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .grid-operation {
+            height: 50px;
+        }
+
+        .grid-item:hover {
+            box-shadow: 0 10px 10px rgba(1, 1, 1, 1);
+        }
+
+        .site-name {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #005aab;
+        }
+
+        .site-description {
+            color: #4b5563;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            float: center;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <header class="header flex items-center justify-between px-4 py-5">
+            <img src="https://goodwillfinance.com.np/img/white.png" alt="Logo" class="max-h-14">
+            <nav class="flex flex-wrap">
+                <button data-tab-target="#internal-sites"
+                    class="tab-button text-gray-600 py-2 px-4 rounded-t-lg bg-white w-full sm:w-auto mb-2 sm:mb-0">
+                    Internal Sites
+                </button>
+                <button data-tab-target="#downloads"
+                    class="tab-button text-gray-600 py-2 px-4 rounded-t-lg bg-white w-full sm:w-auto mb-2 sm:mb-0">
+                    Operation Manual
+                </button>
+            </nav>
+        </header>
+
+        <main class="flex-1 overflow-y-auto p-5">
+            <div class="tab-content-wrapper">
+                <div id="internal-sites" class="tab-content active">
+                    <h2 class="text-3xl font-bold text-[#005aab] mb-4">Internal Sites</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <a target="__blank" href="https://goodwillfinance.com.np/" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\Goodwill.jpg" width="100"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="http://192.168.104.180/inorins_web" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\web.png" width="100"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="http://192.168.104.180/inorins_dch" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\web.png" width="100"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="http://192.168.104.171:8080/" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\banksmart.png" width="300"
+                                        height="100" alt="Description">
+                                </div>
+
+                            </a>
+                        </div>
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="https://182.93.93.98:8080/ECC" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\ecc.png" width="100"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+                        <div class="grid-item">
+                            <a target="__blank" href="https://182.93.93.107:6443/connectipsbankcentral"
+                                class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\cips.png" width="150"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="https://casba.cdsc.com.np/#/login" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\casba.png" width="500"
+                                        height="100" alt="Description">
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="https://qr.goodwillfinance.com.np/" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\lms.png" width="100"
+                                        height="100" alt="Description">
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+
+                        <div class="grid-item">
+                            <a target="__blank" href="\\192.168.104.151\comon file" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\commonfile.jpg"
+                                        width="100" height="100" alt="Description">
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+                        <div class="grid-item">
+                            <a target="__blank" href="http://192.168.104.191:8081" class="internal-site-link">
+                                <div>
+                                    <p class="site-description"></p>
+                                </div>
+                                <div class="container">
+                                    <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\memo.png" width="180"
+                                        height="100" alt="Description">
+                                </div>
+
+                            </a>
+                        </div>
+
+                        <!-- ===========================================================-->
+                    </div>
+
+                    <div id="other-sites" class="">
+                        <h2 class="text-3xl font-bold text-[#005aab] mb-4">Other Sites</h2>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <a target="__blank" href="https://sis.nrb.org.np/iFileProd/adminIndexPage"
+                                    class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\nrb.png" width="300"
+                                            height="100" alt="Description">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+
+                            <div class="grid-item">
+                                <a target="__blank" href="https://nepalstock.com/" class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\nepse.png" width="110"
+                                            height="100" alt="Description">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+
+                            <div class="grid-item">
+                                <a target="__blank" href="https://meroshare.cdsc.com.np/#/login"
+                                    class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\meroshare.png"
+                                            width="110" height="100" alt="Description">
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+
+                            <div class="grid-item">
+                                <a target="__blank" href="http://goodwill.icare.iis/admin/ikyc/"
+                                    class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\icare.png" width="190"
+                                            height="100" alt="Description">
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+
+                            <div class="grid-item">
+                                <a target="__blank" href="https://acstatus.nrb.org.np/login" class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\bfr.png" width="250"
+                                            height="100" alt="Description">
+                                    </div>
+
+                                </a>
+                            </div>
+                            <!-- ===========================================================-->
+
+                            <div class="grid-item">
+                                <a target="__blank" href="https://ird.gov.np/" class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\ird.png" width="300"
+                                            height="100" alt="Description">
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+                            <div class="grid-item">
+                                <a target="__blank" href="https://goaml.fiu.nrb.org.np/PRD/Account/LogOn"
+                                    class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\goaml.png" width="100"
+                                            height="100" alt="Description">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ===========================================================-->
+                            <div class="grid-item">
+                                <a target="__blank" href="https://doms.gov.np/csd/MainTree.do"
+                                    class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\doms.png" width="100"
+                                            height="100" alt="Description">
+                                    </div>
+
+                                </a>
+                            </div>
+                            <!-- ===========================================================-->
+                            <div class="grid-item">
+                                <a target="__blank" href="https://cibnepal.org.np" class="internal-site-link">
+                                    <div>
+                                        <p class="site-description"></p>
+                                    </div>
+                                    <div class="container">
+                                        <img src="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\Pictures\cib.png" width="300"
+                                            height="100" alt="Description">
+                                    </div>
+                                </a>
+                            </div>
+			</div>
+                    </div>
+                </div>
+
+                <div id="downloads" class="tab-content">
+                    <h2 class="text-3xl font-bold text-[#005aab] mb-4">Operational Manuals and Policies</h2>
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Branch Operational Manual.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Branch Operational Manual</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\AML ,CFT AND KYC POLICY &  PROCEDURE - 2024.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">AML, CFT and KYC Policy & Procedure-2024</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Business Continuity Plan.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Business Continuity Plan</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Arthik Prasasan Biniyamawali.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Arthik Prasasan Biniyamawali</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\BOD Education Policy.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">BOD Education Policy</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\BOD Management.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">BOD Management</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Collateral valuation And Management Guidelines.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Collateral Valuation And Management Guidelines</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Contingency Funding Plan.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Contingency Funding Plan</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Disclosure Policy.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Disclosure Policy</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\GFIL Assests Management.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">GFIL Assests Management</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\GFIL Economic Biniyamawali.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">GFIL Economic Biniyamawali</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\GFIL Invest , Agriculture Managment.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">GFIL Invest, Agriculture Managment</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\GFIL KYC.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">GFIL KYC</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Goodwill Loan.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">GFIL Loan</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Internal Accounting Instruction.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Internal Accounting Instruction</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Internal Capital Adequacy Assessment Process Policy.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Internal Capital Adequacy Assessment Process Policy</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Off balance Sheet Transaction.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Off Balance Sheet Transaction</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Prasasan Biniyamawali.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Prasasan Biniyamawali</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Procedure And Guideline For RTGS Transfer.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Procedure And Guideline For RTGS Transfer</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Service Outsourcing Policy.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Service Outsourcing Policy</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Staff Evaluation.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Staff Evaluation</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Staff Service.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Staff Service</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a href="C:\Users\HO IT 4\Desktop\WEBSITE LINKS\GFIL New All Policy\Succession Planning Guidelines.pdf"
+                                target="__blank" class="download-link hover:text-black">
+                                <h3 class="site-name">Succession Planning Guidelines</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer class="footer py-5 text-center text-white">
+            <p>&copy; 2024 Goodwill Finance. All rights reserved.</p>
+            <p>
+                <a href="#" class="text-white hover:text-black">Privacy Policy</a> |
+                <a href="#" class="text-white hover:text-black">Terms of Service</a> |
+                <a href="#" class="text-white hover:text-black">Contact Us</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+
+
+
+</html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('[data-tab-target]');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = document.querySelector(tab.dataset.tabTarget);
+
+                tabs.forEach(t => t.classList.remove('bg-gray-100', 'text-gray-900', 'active'));
+                tab.classList.add('bg-gray-100', 'text-gray-900', 'active');
+
+                tabContents.forEach(tabContent => {
+                    tabContent.classList.remove('active');
+                });
+                target.classList.add('active');
+            });
+        });
+    });
+</script>
